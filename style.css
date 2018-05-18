@@ -13,17 +13,19 @@ a {
   color: #333;
 }
 
+p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
 h1 {
-  margin: 0;
-  margin-top: 40px;
-  margin-bottom: 15px;
+  margin: 15px 0;
   font-size: 27px;
+  letter-spacing: 1px;
 }
 
 h2 {
-  margin: 0;
-  margin-top: 40px;
-  margin-bottom: 15px;
+  margin: 20px 0;
 }
 
 .container {
@@ -32,13 +34,63 @@ h2 {
   width: 100%;
 }
 
-.main-img-container {
-  background: url('main-img.jpg') fixed no-repeat;
-  background-position: center;
-  background-size: 100%;
+.slider-wrapper {
+  width: 100%;
   height: 600px;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
+}
+
+.slider1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('main-img.jpg') no-repeat fixed; 
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('main-img2.jpg') no-repeat fixed; 
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: -600px;
+  margin-left: 100%;
+  padding: 0;
+}
+
+.slider-content {
+  width: 60%;
+  padding-top: 250px;
+  margin: auto;
+  text-align: center;
+}
+
+.slider-content h1 {
+  color: white;
+  font-size: 32px;
+}
+
+.slider-content p {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.slider-content button {
+  color: white;
+  background-color: #30B08F;
+  padding: 5px 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.slider-content button p {
+  margin: 0;
 }
 
 .wrapper {
@@ -48,7 +100,7 @@ h2 {
   padding: 0;
 }
 
-.header{
+.top-nav-wrapper {
   position: fixed;
   background-color: white;
   width: 100%;
@@ -58,35 +110,34 @@ h2 {
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
+.top-nav {
   width: 80%;
   margin: 0 auto;
 }
 
-.member {
+.nav {
   margin: 0;
   float: right;
 }
 
-.member li {
+.nav li {
   display: inline-block;
   list-style-type: none;
   height: 55px;
   padding: 0 25px;
 }
 
-.member li:hover {
-  background-color: #e9e9e9;
-  transition: background-color .5s;
+.nav li:hover {
+  color: #30B08F;
+  transition: color .5s;
 }
 
-.member li p {
-  padding: 4px 0;
+.nav li p {
+  padding: 2px 0;
 }
 
 .logo {
   margin: 14px 0;
   display: inline-block;
-  font-size: 25px;
-  letter-spacing: 6px;
+  font-size: 23px;
 }
