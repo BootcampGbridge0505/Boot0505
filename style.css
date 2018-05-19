@@ -25,7 +25,9 @@ h1 {
 }
 
 h2 {
-  margin: 20px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -98,7 +100,7 @@ h2 {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding: 0;
+  padding: 30px 0;
 }
 
 .top-nav-wrapper {
@@ -124,12 +126,14 @@ h2 {
 .nav li {
   display: inline-block;
   list-style-type: none;
-  height: 55px;
-  padding: 0 25px;
+  height: 51px;
+  padding: 0 10px;
+  margin: 0 15px;
 }
 
 .nav li:hover {
   color: #30B08F;
+  border-bottom: solid 4px #30B08F;
   transition: color .5s;
 }
 
@@ -141,4 +145,60 @@ h2 {
   margin: 14px 0;
   display: inline-block;
   font-size: 23px;
+}
+
+.header-img-content {
+  width: 60%;
+  padding-top: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+.header-img-content h1 {
+  color: white;
+  font-size: 35px;
+}
+
+
+.about-header-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('main-img.jpg') no-repeat center center fixed; 
+  background-size: 100%;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.mission {
+  background-color: #e8e8e8;
+  text-align: center;
+  margin: 0;
+  padding: 45px 0;
+}
+
+.mission__statement--text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mission p {
+  line-height: 25px;
+}
+
+.about-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.whyCreated p {
+  text-align: center;
+}
+
+.whyCreated h1 {
+  margin: 38px 0;
+  font-weight: normal;
+  font-size: 22px;
 }
