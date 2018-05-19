@@ -6,8 +6,8 @@ $(document).ready(function() {
         
         if(sliderOne.css('margin-left') == '0px') {
             sliderTwo.css({'margin-left' : '100%'});
-            sliderOne.animate({marginLeft : '-100%'}, 'slow');
             sliderTwo.animate({marginLeft : '0px'}, 'slow');
+            sliderOne.animate({marginLeft : '-100%'}, 'slow');
         } else {
             sliderOne.css({'margin-left' : '100%'});
             sliderOne.animate({marginLeft : '0px'}, 'slow');
