@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    // main slider
     setInterval(function () {      
         var sliderOne = $('.slider1');
         var sliderTwo = $('.slider2');
@@ -13,6 +14,6 @@ $(document).ready(function() {
             sliderOne.animate({marginLeft : '0px'}, 'slow');
             sliderTwo.animate({marginLeft : '-100%'}, 'slow');
         }
-    }, 7000);
+    }, 8000);
 
 });
