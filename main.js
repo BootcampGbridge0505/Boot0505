@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    // contact form
+    var contactBody = $('.contact-form-content');
+    var contactHead = $('.contact-form-top');
+    var contactOpen = $('#contact-open');
+    var contactClose = $('#contact-close');
+
+    contactHead.click(function() {
+        contactBody.toggle();
+        contactClose.toggle();
+        contactOpen.toggle();
+    });
+
     // main slider
     setInterval(function () {      
         var sliderOne = $('.slider1');
@@ -14,6 +26,6 @@ $(document).ready(function() {
             sliderOne.animate({marginLeft : '0px'}, 'slow');
             sliderTwo.animate({marginLeft : '-100%'}, 'slow');
         }
-    }, 8000);
+    }, 7000);
 
 });
