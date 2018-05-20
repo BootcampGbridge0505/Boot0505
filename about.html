@@ -17,9 +17,9 @@
           <a href="index.html">Gbridge</a>
         </h1>
         <ul class="nav">
-          <a class="nav__intro" href="about.html"><li><p>소개</p></li></a>
+          <a class="nav__intro" href="about.html"><li style="border-bottom: solid 4px #30B08F"><p>소개</p></li></a>
           <a class="nav__english" href="english.html"><li><p>영어</p></li></a>
-          <a class="nav__career" href="mentoring.html"><li><p>커리어</p></li></a>
+          <a class="nav__career" href="mentoring.html"><li><p>멘토링</p></li></a>
         </ul>
       </nav>
     </div>
@@ -52,13 +52,13 @@
           영어와 컨설팅 및 모든 것을 갖춘 서비스가 필요했습니다.<br>
           그래서 직접 만들기로 결심했습니다.
         </h1>
-        <p>"제주도, 작고 아름다운 섬에서 19년을 지냈습니다.<br>
-        21살의 나이에 미국 캘리포니아에서 유학을 시작하여 23살에는 뉴욕에서 큰 꿈을 꾸기 시작했습니다.<br>
-        그러나 저에게는 준비된 것이 없었습니다. 꿈을 위해 필요한 정보는 턱없이 부족했습니다.<br>
-        수십만원이 넘어가는 영어 강의와 컨설팅 비용, 제가 원하는 저렴한 서비스를 찾기가 힘들었습니다.<br>
-        그래서 많은 분들께 도움을 드리고자 직접 만들게 되었습니다."</p>
+        <p>"제주도, 작고 아름다운 섬에서 19년을 지냈습니다. 
+        21살의 나이에 미국 캘리포니아에서 유학을 시작하여 23살에는 뉴욕에서 큰 꿈을 꾸기 시작했습니다. 
+        그러나 저에게는 준비된 것이 없었습니다. 
+        수십만원이 넘어가는 영어 강의와 컨설팅 비용, 제가 원하는 저렴한 서비스를 찾기가 힘들었습니다.
+        그래서 많은 분들께 도움을 드리고자 제가 원하던 서비스를 직접 만들게 되었습니다."</p>
       </section>
-      
+      <hr>
         <!-- 기존 영어 수업 문제점제기 -->
         <!--section class="problem-English">
           <h2 class="problem-English__why">
@@ -103,7 +103,31 @@
           </address>
         </footer-->
       </div>      
-    </div>
+
+      <div class="contact-form-wrapper">
+        <div class="contact-form-top">
+          <p>문의하기</p>
+          <p id="contact-open">+</p>
+          <p id="contact-close">-</p>
+        </div>
+        <div class="contact-form-content">
+          <form action="action_page.php">
+  
+            <p><label for="name">개인정보</label></p>
+            <p><input type="text" id="name" name="fullname" placeholder="이름"></p>
+  
+            <p><input type="email" id="email" name="email" placeholder="이메일"></p>
+      
+        
+            <p><label for="subject">메시지</label></p>
+            <p><textarea id="subject" name="subject" placeholder="내용을 입력해 주세요."></textarea></p>
+        
+            <p><input id="contact-submit" type="submit" value="메시지 보내기"></p>
+        
+          </form>
+        </div>
+      </div>      
+
 
   </div>
 </body>
